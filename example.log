@@ -404,3 +404,119 @@ DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: 
 DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
 DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
 DEBUG XNIO-1 I/O-2 io.undertow.request - Timing out idle connection from /0:0:0:0:0:0:0:1:57135
+DEBUG main io.undertow.session - Setting default session timeout to 1800
+DEBUG main io.undertow.session - Registered session listener io.undertow.servlet.core.SessionListenerBridge@13eb8acf
+DEBUG main org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+DEBUG main org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+INFO main org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.revolut.account.RevolutMoneyTransferApp
+INFO main org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002200: Adding class resource com.revolut.account.controller.AccountController from Application class com.revolut.account.RevolutMoneyTransferApp
+DEBUG main com.revolut.account.RestServer - starting on http://0.0.0.0:8080
+DEBUG main io.undertow - starting undertow server io.undertow.Undertow@15aab8c6
+INFO main org.xnio - XNIO version 3.3.8.Final
+INFO main org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
+DEBUG XNIO-1 I/O-2 org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.WindowsSelectorImpl@7a223afd
+DEBUG XNIO-1 Accept org.xnio.nio - Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.WindowsSelectorImpl@edb3a2c
+DEBUG XNIO-1 I/O-4 org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.WindowsSelectorImpl@344bfd28
+DEBUG XNIO-1 I/O-3 org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.WindowsSelectorImpl@415e0ab
+DEBUG XNIO-1 I/O-1 org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.WindowsSelectorImpl@2cec2fb3
+DEBUG main io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 8080
+DEBUG XNIO-1 I/O-2 io.undertow.request - Matched default handler path /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-1 io.undertow.request.security - Attempting to authenticate /account/createCustomer/sudharshanrao@gmail.com, authentication required: false
+DEBUG XNIO-1 task-1 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@795cc47b for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-1 io.undertow.request.security - Authentication result was ATTEMPTED for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 I/O-2 io.undertow.request - Timing out idle connection from /0:0:0:0:0:0:0:1:58147
+DEBUG XNIO-1 I/O-4 io.undertow.request - Matched default handler path /account/allCustomers
+DEBUG XNIO-1 task-2 io.undertow.request.security - Attempting to authenticate /account/allCustomers, authentication required: false
+DEBUG XNIO-1 task-2 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@795cc47b for /account/allCustomers
+DEBUG XNIO-1 task-2 io.undertow.request.security - Authentication result was ATTEMPTED for /account/allCustomers
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/allCustomers
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+DEBUG XNIO-1 I/O-4 io.undertow.request - Matched default handler path /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-3 io.undertow.request.security - Attempting to authenticate /account/createCustomer/sudharshanrao@gmail.com, authentication required: false
+DEBUG XNIO-1 task-3 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@795cc47b for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-3 io.undertow.request.security - Authentication result was ATTEMPTED for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-3 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 I/O-4 io.undertow.request - Matched default handler path /account/allCustomers
+DEBUG XNIO-1 task-4 io.undertow.request.security - Attempting to authenticate /account/allCustomers, authentication required: false
+DEBUG XNIO-1 task-4 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@795cc47b for /account/allCustomers
+DEBUG XNIO-1 task-4 io.undertow.request.security - Authentication result was ATTEMPTED for /account/allCustomers
+DEBUG XNIO-1 task-4 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/allCustomers
+DEBUG main io.undertow.session - Setting default session timeout to 1800
+DEBUG main io.undertow.session - Registered session listener io.undertow.servlet.core.SessionListenerBridge@13eb8acf
+DEBUG main org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+DEBUG main org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+INFO main org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.revolut.account.RevolutMoneyTransferApp
+INFO main org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002200: Adding class resource com.revolut.account.controller.AccountController from Application class com.revolut.account.RevolutMoneyTransferApp
+DEBUG main com.revolut.account.RestServer - starting on http://0.0.0.0:8080
+DEBUG main io.undertow - starting undertow server io.undertow.Undertow@37654521
+INFO main org.xnio - XNIO version 3.3.8.Final
+INFO main org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
+DEBUG XNIO-1 I/O-1 org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.WindowsSelectorImpl@68d2f82
+DEBUG XNIO-1 Accept org.xnio.nio - Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.WindowsSelectorImpl@7ec72113
+DEBUG XNIO-1 I/O-3 org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.WindowsSelectorImpl@9571ef3
+DEBUG XNIO-1 I/O-2 org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.WindowsSelectorImpl@1dcf0d4c
+DEBUG XNIO-1 I/O-4 org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.WindowsSelectorImpl@6268a7a3
+DEBUG main io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 8080
+DEBUG XNIO-1 I/O-1 io.undertow.request - Matched default handler path /account/allCustomers
+DEBUG XNIO-1 task-1 io.undertow.request.security - Attempting to authenticate /account/allCustomers, authentication required: false
+DEBUG XNIO-1 task-1 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@6425059a for /account/allCustomers
+DEBUG XNIO-1 task-1 io.undertow.request.security - Authentication result was ATTEMPTED for /account/allCustomers
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/allCustomers
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+DEBUG XNIO-1 I/O-1 io.undertow.request - Matched default handler path /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-2 io.undertow.request.security - Attempting to authenticate /account/createCustomer/sudharshanrao@gmail.com, authentication required: false
+DEBUG XNIO-1 task-2 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@6425059a for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-2 io.undertow.request.security - Authentication result was ATTEMPTED for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 I/O-1 io.undertow.request - Matched default handler path /account/allCustomers
+DEBUG XNIO-1 task-3 io.undertow.request.security - Attempting to authenticate /account/allCustomers, authentication required: false
+DEBUG XNIO-1 task-3 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@6425059a for /account/allCustomers
+DEBUG XNIO-1 task-3 io.undertow.request.security - Authentication result was ATTEMPTED for /account/allCustomers
+DEBUG XNIO-1 task-3 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/allCustomers
+DEBUG main io.undertow.session - Setting default session timeout to 1800
+DEBUG main io.undertow.session - Registered session listener io.undertow.servlet.core.SessionListenerBridge@13eb8acf
+DEBUG main org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+DEBUG main org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+INFO main org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.revolut.account.RevolutMoneyTransferApp
+INFO main org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002220: Adding singleton resource com.revolut.account.controller.AccountController from Application class com.revolut.account.RevolutMoneyTransferApp
+DEBUG main com.revolut.account.RestServer - starting on http://0.0.0.0:8080
+DEBUG main io.undertow - starting undertow server io.undertow.Undertow@793be5ca
+INFO main org.xnio - XNIO version 3.3.8.Final
+INFO main org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
+DEBUG XNIO-1 I/O-2 org.xnio.nio - Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.WindowsSelectorImpl@254f1844
+DEBUG XNIO-1 I/O-3 org.xnio.nio - Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.WindowsSelectorImpl@679073df
+DEBUG XNIO-1 I/O-1 org.xnio.nio - Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.WindowsSelectorImpl@48b3fdb2
+DEBUG XNIO-1 Accept org.xnio.nio - Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.WindowsSelectorImpl@a101204
+DEBUG XNIO-1 I/O-4 org.xnio.nio - Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.WindowsSelectorImpl@4bfaad43
+DEBUG main io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 8080
+DEBUG XNIO-1 I/O-3 io.undertow.request - Matched default handler path /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-1 io.undertow.request.security - Attempting to authenticate /account/createCustomer/sudharshanrao@gmail.com, authentication required: false
+DEBUG XNIO-1 task-1 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@24d04ea8 for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-1 io.undertow.request.security - Authentication result was ATTEMPTED for /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 task-1 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/createCustomer/sudharshanrao@gmail.com
+DEBUG XNIO-1 I/O-3 io.undertow.request - Matched default handler path /account/allCustomers
+DEBUG XNIO-1 task-2 io.undertow.request.security - Attempting to authenticate /account/allCustomers, authentication required: false
+DEBUG XNIO-1 task-2 io.undertow.request.security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@24d04ea8 for /account/allCustomers
+DEBUG XNIO-1 task-2 io.undertow.request.security - Authentication result was ATTEMPTED for /account/allCustomers
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - RESTEASY002315: PathInfo: /account/allCustomers
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+DEBUG XNIO-1 task-2 org.jboss.resteasy.resteasy_jaxrs.i18n - Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+DEBUG XNIO-1 I/O-3 io.undertow.request - Timing out idle connection from /0:0:0:0:0:0:0:1:58310
