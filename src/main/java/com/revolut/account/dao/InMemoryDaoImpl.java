@@ -1,5 +1,6 @@
 package com.revolut.account.dao;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -55,5 +56,14 @@ public class InMemoryDaoImpl implements InMemoryDao{
 			return accountMap.get(customerId);
 		}
 		throw new RuntimeException("CustomerId: "+customerId+" not found in database !!");
+	}
+	
+	public synchronized void depositFunds(Customer beneficiary, BigDecimal amount) {
+		Account beneficiaryAccount = findAccountByCustomerId(beneficiary.getId());
+		beneficiaryAccount.depositFunds(amount);
+	}
+	
+	public synchronized Account enquireBalance(Customer customer) {
+		return findAccountByCustomerId(customer.getId());
 	}
 }
