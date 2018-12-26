@@ -1,9 +1,7 @@
 package com.revolut.moneyTransfer;
 
-import static com.jayway.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-
-import java.math.BigDecimal;
+import static com.jayway.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -15,13 +13,11 @@ import com.jayway.restassured.path.json.config.JsonPathConfig;
 
 public class MoneyTransferTest 
 {
-	
 	@BeforeClass
 	public static void setup() {
 	    RestAssured.baseURI = "http://localhost";
 	    RestAssured.port = 8080;
 	    RestAssured.defaultParser = Parser.JSON;
-	    
 	}
 	
     @Test

@@ -20,7 +20,8 @@ public class InMemoryDaoImpl implements InMemoryDao{
         this.accountMap = new ConcurrentHashMap<>();
     }
     
-    public void createCustomer(String email) {
+    // create custoer and corresponding account. 
+    public synchronized void createCustomer(String email) {
     	if(customerMap.containsKey(email)) {
     		throw new RuntimeException("This email has already been used to register a customer !!");
     	}
@@ -37,11 +38,13 @@ public class InMemoryDaoImpl implements InMemoryDao{
         throw new RuntimeException("The email: "+email+" does not exist in database !!");
     }
 
+    // return a list of customers. if size is more then we can think of returning a stream.
     public List<Customer> listCustomers() {
         return customerMap.values()
                       .stream().collect(Collectors.toList());
     }
 	
+    // assumes that both accounts are same currency
 	public synchronized void transferFunds(Transfer transfer) {
 		Customer transferror = findCustomerByEmailId(transfer.getFromEmail());
 		Account transferrorAccount = findAccountByCustomerId(transferror.getId());
@@ -63,7 +66,7 @@ public class InMemoryDaoImpl implements InMemoryDao{
 		beneficiaryAccount.depositFunds(amount);
 	}
 	
-	public synchronized Account enquireBalance(Customer customer) {
+	public Account enquireBalance(Customer customer) {
 		return findAccountByCustomerId(customer.getId());
 	}
 }
